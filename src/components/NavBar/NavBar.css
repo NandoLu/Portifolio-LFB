@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  background-color: black;
+  /* background-color: black; */
   color: white;
-  padding: 1rem 2rem;
-  width: 100;
+  padding: 1rem 6rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logo a {
