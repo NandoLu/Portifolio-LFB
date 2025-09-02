@@ -1,4 +1,4 @@
-.container-home {
+.section {
   display: flex;
   flex-direction: row;
   flex: 1;
@@ -11,7 +11,7 @@
   /* background-color: red; */
 }
 
-.saudacoes {
+.title {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -20,9 +20,35 @@
   /* background-color: red; */
 }
 
-.saudacoes h1 {
+.title h1 {
+  color: white;
   margin: 1px;
   font-size: 40px;
+}
+
+/* Textos  */
+
+.text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  padding: 0px;
+  gap: 30px;
+  /* background-color: red; */
+}
+
+.text h1 {
+  color: white;
+  margin: 1px;
+  font-size: 30px;
+}
+
+.text p {
+  color: white;
+  margin: 1px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .container-photo {
@@ -30,8 +56,58 @@
   width: 25%;
 }
 
+.container-photo .icon{
+  display: flex;
+  width: 100%;
+  filter: brightness(0) invert(1);
+  transition: opacity 0.5s ease;
+}
+
+.icon:hover{
+  opacity: 0.5;
+}
+
+
 .photo {
   height: 100%;
   width: 100%;
   border-radius: 50%;
+}
+
+
+/* --- Contribuições no GitHub --- */
+
+.contribuicoes-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.contribuicoes-container .title {
+  width: 100%; 
+  align-items: center;
+  text-align: center;
+}
+
+.github-graph {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.github-link a {
+  color: #3e85ff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.github-link a:hover {
+  color: white;
 }
