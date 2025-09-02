@@ -7,7 +7,6 @@ const Home = () => {
 
             <nav className="section">
 
-
                 <div className="title">
                     <h1>Olá!</h1>
                     <h1>Me chamo</h1>
@@ -54,10 +53,9 @@ const Home = () => {
             {/* HABILIDADES */}
 
             <nav className="section">
-
-                <div className="text">
+                <div className="skills">
                     <h1>Habilidades</h1>
-                    <div>
+                    <div className='container-habilidade'>
                         <h2>Back-End</h2>
                         <ul>
                             <li>Node JS</li>
@@ -67,7 +65,8 @@ const Home = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    {/* Adicionado a classe aqui */}
+                    <div className='container-habilidade'>
                         <h2>Front-End</h2>
                         <ul>
                             <li>React JS</li>
@@ -78,7 +77,8 @@ const Home = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    {/* Adicionado a classe aqui */}
+                    <div className='container-habilidade'>
                         <h2>Ferramentas</h2>
                         <ul>
                             <li>Git</li>

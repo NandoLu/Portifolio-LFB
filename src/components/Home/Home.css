@@ -5,7 +5,7 @@
   justify-content: space-around;
   align-items: center;
   color: white;
-  width: 90%;
+  width: 100%;
   padding: 5% 3% 5% 3%;
   box-sizing: border-box;
   /* background-color: red; */
@@ -31,6 +31,7 @@
 .text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
   width: 50%;
   padding: 0px;
@@ -110,4 +111,59 @@
 
 .github-link a:hover {
   color: white;
+}
+
+/* HABILIDADES  */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  gap: 25px;
+  /* background-color: red; */
+}
+
+.skills h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.container-habilidade{
+  width: 100%;
+  background-color: #000;
+  border-radius: 20px;
+  padding: 3%;
+}
+
+.container-habilidade h2{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container-habilidade ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.container-habilidade li {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.container-habilidade li:hover {
+  background-color: #555;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.1); /* Sombra que cria o efeito de brilho */
+  transform: scale(1.02); /* Aumenta o tamanho levemente para um efeito mais dinâmico */
+  cursor: pointer;
 }
