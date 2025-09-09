@@ -36,10 +36,10 @@ const Home = () => {
 
             <div className="contribuicoes-container">
                 <div className="title">
-                    <h1 >Minhas Contribuições</h1>
+                    <h1>Minhas Contribuições</h1>
                     <div className="github-graph">
                         <img
-                            src="https://raw.githubusercontent.com/NandoLu/portfolio-assets/main/streak-stats.svg"
+                            src="https://raw.githubusercontent.com/NandoLu/portfolio-assets/main/contributions.svg"
                             alt="Gráfico de Contribuições do GitHub"
                             className="contribuicoes-img"
                         />
