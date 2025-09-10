@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  /* background-color: black; */
+  background-color: #021024; /* ou outro valor válido */
   color: white;
   padding: 2rem 6rem;
   width: 100%;
