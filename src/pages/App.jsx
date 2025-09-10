@@ -1,22 +1,23 @@
-import { Routes, Route } from 'react-router-dom'
-import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
-import Home from '../components/Home'
-import About from '../components/About'
-import '../index.css'
+import { Routes, Route } from 'react-router-dom';
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
+import Home from '../components/Home';
+import About from '../components/About';
+import '../index.css';
 
 function App() {
-
   return (
-    <div className='container'>
+    <>
       <NavBar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-      </Routes>
+      <div className='container'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </div>
       <Footer />
-    </div>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;

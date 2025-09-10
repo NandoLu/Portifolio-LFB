@@ -1,17 +1,18 @@
 import {Link} from 'react-router-dom';
-import './NavBar.css';
 
 const NavBar = () => {
     return (
-        <nav className="navbar">
+        <nav className="bg-[#021024] text-white p-6 md:p-8 flex justify-between items-center w-full box-border">
             <div className="logo">
-                <a>LFB</a>
+                <Link to="/" className="text-2xl font-bold text-white no-underline">
+                    LFB
+                </Link>
             </div>
-            <ul className="nav-menu">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">Sobre</Link></li>
-                <li><Link to="/">Projetos</Link></li>
-                <li><Link to="/">Contato</Link></li>
+            <ul className="hidden md:flex space-x-6 list-none m-0 p-0">
+                <li><Link to="/" className="text-lg text-white no-underline transition-colors duration-300 hover:text-[#a0a0a0]">Home</Link></li>
+                <li><Link to="/about" className="text-lg text-white no-underline transition-colors duration-300 hover:text-[#a0a0a0]">Sobre</Link></li>
+                <li><Link to="/" className="text-lg text-white no-underline transition-colors duration-300 hover:text-[#a0a0a0]">Projetos</Link></li>
+                <li><Link to="/" className="text-lg text-white no-underline transition-colors duration-300 hover:text-[#a0a0a0]">Contato</Link></li>
             </ul>
         </nav>
     );
