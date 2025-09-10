@@ -1,93 +1,89 @@
-import './Home.css';
+import React from 'react';
 
 const Home = () => {
     return (
         <>
-            {/* SAUDAÇÕES  */}
-
-            <nav className="section">
-
-                <div className="title">
-                    <h1>Olá!</h1>
-                    <h1>Me chamo</h1>
-                    <h1>Luiz Fernando Balbino</h1>
+            {/* SAUDAÇÕES */}
+            <section className="flex flex-col md:flex-row flex-1 justify-around items-center text-white w-full py-20 px-4 md:px-12 box-border">
+                <div className="flex flex-col w-full md:w-1/2 p-0 text-center md:text-left">
+                    <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Olá!</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Me chamo</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Luiz Fernando Balbino</h1>
                 </div>
-                <div className='container-photo'>
-                    <img className='photo' src='../public/luiz-photo.jpg' alt="Foto de Luiz Fernando Balbino"></img>
+                <div className="w-1/2 md:w-1/4 mt-8 md:mt-0 flex justify-center">
+                    <img className="rounded-full w-full max-w-sm h-auto" src='../public/luiz-photo.jpg' alt="Foto de Luiz Fernando Balbino" />
                 </div>
-            </nav>
+            </section>
 
-            {/* SOBRE  */}
-
-            <nav className="section">
-                <div className="text">
-                    <h1>Um pouco sobre mim</h1>
-                    <p>Sou bacharelando de Engenharia de Software (2/8) na
-                        FIAP, tenho 19 anos e estou buscando uma oportunidade de estágio como
-                        Desenvolvedor.</p>
-                    <p>Formado em Técnico em Informática em 2024 no Instituto Federal do Sul de Minas.</p>
+            {/* SOBRE */}
+            <section className="flex flex-col md:flex-row flex-1 justify-around items-center text-white w-full py-20 px-4 md:px-12 box-border">
+                <div className="flex flex-col items-center md:items-start w-full md:w-1/2 p-0 gap-8 text-center md:text-left">
+                    <h1 className="text-3xl md:text-4xl font-bold m-0">Um pouco sobre mim</h1>
+                    <p className="font-normal text-lg md:text-xl m-0">
+                        Sou bacharelando de Engenharia de Software (2/8) na FIAP, tenho 19 anos e estou buscando uma oportunidade de estágio como Desenvolvedor.
+                    </p>
+                    <p className="font-normal text-lg md:text-xl m-0">
+                        Formado em Técnico em Informática em 2024 no Instituto Federal do Sul de Minas.
+                    </p>
                 </div>
-                <div className='container-photo'>
-                    <img className='icon' src='../public/icons/data-management.png' alt="Icone Tecnologia"></img>
+                <div className="w-1/2 md:w-1/4 mt-8 md:mt-0 flex justify-center">
+                    <img className="w-full h-auto max-w-sm filter brightness-0 invert transition-opacity duration-500 hover:opacity-50" src='../public/icons/data-management.png' alt="Icone Tecnologia" />
                 </div>
-            </nav>
+            </section>
 
             {/* CONTRIBUICOES */}
-
-            <div className="contribuicoes-container">
-                <div className="title">
-                    <h1>Minhas Contribuições</h1>
-                    <div className="github-graph">
+            <section className="flex flex-col items-center text-white w-full box-border py-20 px-4 md:px-12">
+                <div className="flex flex-col w-full items-center text-center">
+                    <h1 className="text-3xl md:text-4xl font-bold m-0">Minhas Contribuições</h1>
+                    <div className="w-full overflow-x-auto mt-5">
                         <img
                             src="https://raw.githubusercontent.com/NandoLu/portfolio-assets/main/contributions.svg"
                             alt="Gráfico de Contribuições do GitHub"
-                            className="contribuicoes-img"
+
+                            className="w-full h-auto max-w-2xl mx-auto"
                         />
                     </div>
-                    <p className="github-link">
-                        Veja meu perfil completo no <a href="https://github.com/NandoLu" target="_blank" rel="noopener noreferrer">GitHub</a>.
+                    <p className="text-center mt-5">
+                        Veja meu perfil completo no <a href="https://github.com/NandoLu" target="_blank" rel="noopener noreferrer" className="text-[#3e85ff] no-underline text-base transition-colors duration-300 hover:text-white">GitHub</a>.
                     </p>
                 </div>
-            </div>
+            </section>
 
             {/* HABILIDADES */}
+            <section className="flex flex-col items-center text-white w-full py-20 px-4 md:px-12 box-border">
+                <div className="flex flex-col items-center w-full p-0 gap-6">
+                    <h1 className="text-3xl md:text-4xl font-bold m-0">Habilidades</h1>
 
-            <nav className="section">
-                <div className="skills">
-                    <h1>Habilidades</h1>
-                    <div className='container-habilidade'>
-                        <h2>Back-End</h2>
-                        <ul>
-                            <li>Node JS</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>Python</li>
-                        </ul>
+                    <div className="flex flex-col items-center gap-4 w-full md:w-1/2">
+                        <div className="bg-black rounded-xl p-4 md:p-6 w-full">
+                            <h2 className="mt-0 mb-3 text-2xl">Back-End</h2>
+                            <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Node JS</li>
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">JavaScript</li>
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">TypeScript</li>
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Python</li>
+                            </ul>
+                        </div>
+                        <div className="bg-black rounded-xl p-4 md:p-6 w-full">
+                            <h2 className="mt-0 mb-3 text-2xl">Front-End</h2>
+                            <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">React JS</li>
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">React-Native</li>
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">JavaScript</li>
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">TypeScript</li>
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Python</li>
+                            </ul>
+                        </div>
+                        <div className="bg-black rounded-xl p-4 md:p-6 w-full">
+                            <h2 className="mt-0 mb-3 text-2xl">Ferramentas</h2>
+                            <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Git</li>
+                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">GitHub</li>
+                            </ul>
+                        </div>
                     </div>
-
-                    {/* Adicionado a classe aqui */}
-                    <div className='container-habilidade'>
-                        <h2>Front-End</h2>
-                        <ul>
-                            <li>React JS</li>
-                            <li>React-Native</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-
-                    {/* Adicionado a classe aqui */}
-                    <div className='container-habilidade'>
-                        <h2>Ferramentas</h2>
-                        <ul>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                        </ul>
-                    </div>
-
                 </div>
-            </nav>
+            </section>
         </>
     );
 }
