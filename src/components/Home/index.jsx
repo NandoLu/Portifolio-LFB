@@ -48,13 +48,15 @@ const Home = () => {
                 </div>
             </section>
 
+
             {/* HABILIDADES */}
             <section className="flex flex-col items-center text-white w-full py-20 px-4 md:px-12 box-border">
                 <div className="flex flex-col items-center w-full p-0 gap-6">
                     <h1 className="text-3xl md:text-4xl font-bold m-0">Habilidades</h1>
-
-                    <div className="flex flex-col items-center gap-4 w-full md:w-1/2">
-                        <div className="bg-black rounded-xl p-4 md:p-6 w-full">
+                    
+                    {/* Contêiner que centraliza as caixas de habilidade */}
+                    <div className="flex flex-col items-center gap-4 w-full">
+                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-2xl">
                             <h2 className="mt-0 mb-3 text-2xl">Back-End</h2>
                             <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
                                 <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Node JS</li>
@@ -63,7 +65,7 @@ const Home = () => {
                                 <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Python</li>
                             </ul>
                         </div>
-                        <div className="bg-black rounded-xl p-4 md:p-6 w-full">
+                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-2xl">
                             <h2 className="mt-0 mb-3 text-2xl">Front-End</h2>
                             <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
                                 <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">React JS</li>
@@ -73,7 +75,7 @@ const Home = () => {
                                 <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Python</li>
                             </ul>
                         </div>
-                        <div className="bg-black rounded-xl p-4 md:p-6 w-full">
+                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-2xl">
                             <h2 className="mt-0 mb-3 text-2xl">Ferramentas</h2>
                             <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
                                 <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Git</li>
