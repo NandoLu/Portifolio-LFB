@@ -1,8 +1,3 @@
-import React from 'react';
-// Para usar imagens com import, você deve importá-las diretamente.
-// Se as imagens estiverem na pasta 'public', você pode referenciá-las
-// diretamente no 'src' como '/caminho/para/imagem.svg'.
-// Se estiverem na pasta 'src', importe-as.
 import nodejsIcon from '../../assets/icons/nodejs.svg';
 import javascriptIcon from '../../assets/icons/javascript.svg';
 import typescriptIcon from '../../assets/icons/typescript.svg';
@@ -39,6 +34,7 @@ const Habilidades = () => {
             {/* HABILIDADES */}
             <section className="flex flex-col items-center text-white w-full py-20 px-4 md:px-12 box-border">
                 <div className="flex flex-col items-center w-full p-0 gap-6">
+                <h1 className="text-3xl md:text-4xl font-bold m-0">Habilidades</h1>
                     <div className="flex flex-col items-center gap-4 w-full">
                         {/* Back-End */}
                         <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-2xl">
