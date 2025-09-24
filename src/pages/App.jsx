@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import Home from '../components/Home';
 import About from '../components/About';
+import Projects from '../components/Projects';
 import '../index.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
         </Routes>
       </div>
       <Footer />
