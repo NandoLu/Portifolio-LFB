@@ -1,3 +1,4 @@
+import Habilidades from "../Habilidades";
 
 const Home = () => {
     return (
@@ -36,9 +37,8 @@ const Home = () => {
                     <h1 className="text-3xl md:text-4xl font-bold m-0">Minhas Contribuições</h1>
                     <div className="w-full overflow-x-auto mt-5">
                         <img
-                            src="https://raw.githubusercontent.com/NandoLu/portfolio-assets/main/contributions.svg"
+                            src="https://raw.githubusercontent.com/NandoLu/portfolio-assets/main/github-contributions-calendar.svg"
                             alt="Gráfico de Contribuições do GitHub"
-
                             className="w-full h-auto max-w-2xl mx-auto"
                         />
                     </div>
@@ -55,34 +55,7 @@ const Home = () => {
                     <h1 className="text-3xl md:text-4xl font-bold m-0">Habilidades</h1>
                     
                     {/* Contêiner que centraliza as caixas de habilidade */}
-                    <div className="flex flex-col items-center gap-4 w-full">
-                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-2xl">
-                            <h2 className="mt-0 mb-3 text-2xl">Back-End</h2>
-                            <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Node JS</li>
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">JavaScript</li>
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">TypeScript</li>
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Python</li>
-                            </ul>
-                        </div>
-                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-2xl">
-                            <h2 className="mt-0 mb-3 text-2xl">Front-End</h2>
-                            <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">React JS</li>
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">React-Native</li>
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">JavaScript</li>
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">TypeScript</li>
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Python</li>
-                            </ul>
-                        </div>
-                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-2xl">
-                            <h2 className="mt-0 mb-3 text-2xl">Ferramentas</h2>
-                            <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">Git</li>
-                                <li className="bg-gray-800 text-white px-4 py-2 rounded-md text-base transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">GitHub</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <Habilidades/>
                 </div>
             </section>
         </>
