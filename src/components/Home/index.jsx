@@ -18,7 +18,7 @@ const Home = () => {
             {/* SOBRE */}
             <section className="flex flex-col md:flex-row flex-1 justify-around items-center text-white w-full py-20 px-4 md:px-12 box-border">
                 <div className="flex flex-col items-center md:items-start w-full md:w-1/2 p-0 gap-8 text-center md:text-left">
-                    <h1 className="text-3xl md:text-4xl font-bold m-0">Um pouco sobre mim</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold m-0">Um pouco mais sobre mim</h1>
                     <p className="font-normal text-lg md:text-xl m-0">
                         Sou bacharelando de Engenharia de Software (2/8) na FIAP, tenho 19 anos e estou buscando uma oportunidade de estágio como Desenvolvedor.
                     </p>
@@ -26,9 +26,7 @@ const Home = () => {
                         Formado em Técnico em Informática em 2024 no Instituto Federal do Sul de Minas.
                     </p>
                 </div>
-                <div className="w-1/2 md:w-1/4 mt-8 md:mt-0 flex justify-center">
-                    <img className="w-full h-auto max-w-sm filter brightness-0 invert transition-opacity duration-500 hover:opacity-50" src='../public/icons/data-management.png' alt="Icone Tecnologia" />
-                </div>
+               
             </section>
 
             {/* CONTRIBUICOES */}
