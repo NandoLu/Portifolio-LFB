@@ -53,8 +53,6 @@ const Home = () => {
             <section className="flex flex-col items-center text-white w-full py-20 px-4 md:px-12 box-border">
                 <div className="flex flex-col items-center w-full p-0 gap-6">
                     <h1 className="text-3xl md:text-4xl font-bold m-0">Habilidades</h1>
-                    
-                    {/* Contêiner que centraliza as caixas de habilidade */}
                     <Habilidades/>
                 </div>
             </section>
