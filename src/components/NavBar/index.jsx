@@ -35,7 +35,7 @@ const NavBar = () => {
             <ul className="hidden md:flex space-x-6 list-none m-0 p-0">
                 <li><Link to="/" className="text-lg text-white no-underline transition-colors duration-300 hover:text-[#a0a0a0]">Home</Link></li>
                 <li><Link to="/about" className="text-lg text-white no-underline transition-colors duration-300 hover:text-[#a0a0a0]">Sobre</Link></li>
-                <li><Link to="/" className="text-lg text-white no-underline transition-colors duration-300 hover:text-[#a0a0a0]">Projetos</Link></li>
+                <li><Link to="/projects" className="text-lg text-white no-underline transition-colors duration-300 hover:text-[#a0a0a0]">Projetos</Link></li>
                 <li><Link to="/" className="text-lg text-white no-underline transition-colors duration-300 hover:text-[#a0a0a0]">Contato</Link></li>
             </ul>
 
