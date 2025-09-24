@@ -34,14 +34,14 @@ const Habilidades = () => {
             {/* HABILIDADES */}
             <section className="flex flex-col items-center text-white w-full py-20 px-4 md:px-12 box-border">
                 <div className="flex flex-col items-center w-full p-0 gap-6">
-                <h1 className="text-3xl md:text-4xl font-bold m-0">Habilidades</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold m-0">Habilidades</h1>
                     <div className="flex flex-col items-center gap-4 w-full">
                         {/* Back-End */}
-                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-2xl">
+                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-4xl">
                             <h2 className="mt-0 mb-3 text-2xl">Back-End</h2>
-                            <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
+                            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                                 {backendSkills.map((skill, index) => (
-                                    <li key={index} className="bg-gray-800 text-white px-4 py-2 rounded-md text-base flex flex-col items-center justify-center transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">
+                                    <li key={index} className="bg-gray-800 text-white p-4 rounded-xl text-center flex flex-col items-center justify-center transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer h-32 w-full">
                                         <img
                                             src={skill.icon}
                                             alt={skill.name}
@@ -52,13 +52,13 @@ const Habilidades = () => {
                                 ))}
                             </ul>
                         </div>
-
+                        
                         {/* Front-End */}
-                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-2xl">
+                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-4xl">
                             <h2 className="mt-0 mb-3 text-2xl">Front-End</h2>
-                            <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
+                            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                                 {frontendSkills.map((skill, index) => (
-                                    <li key={index} className="bg-gray-800 text-white px-4 py-2 rounded-md text-base flex flex-col items-center justify-center transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">
+                                    <li key={index} className="bg-gray-800 text-white p-4 rounded-xl text-center flex flex-col items-center justify-center transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer h-32 w-full">
                                         <img
                                             src={skill.icon}
                                             alt={skill.name}
@@ -71,11 +71,11 @@ const Habilidades = () => {
                         </div>
 
                         {/* Ferramentas */}
-                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-2xl">
+                        <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-4xl">
                             <h2 className="mt-0 mb-3 text-2xl">Ferramentas</h2>
-                            <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
+                            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                                 {tools.map((tool, index) => (
-                                    <li key={index} className="bg-gray-800 text-white px-4 py-2 rounded-md text-base flex flex-col items-center justify-center transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer">
+                                    <li key={index} className="bg-gray-800 text-white p-4 rounded-xl text-center flex flex-col items-center justify-center transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:scale-105 cursor-pointer h-32 w-full">
                                         <img
                                             src={tool.icon}
                                             alt={tool.name}
