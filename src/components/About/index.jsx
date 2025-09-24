@@ -1,20 +1,17 @@
-import './About.css';
-
 const About = () => {
     return (
-        <nav className="section">
-            <div className="saudacoes">
-                <h1>Quem sou eu?</h1>
-                <h1>Estudante de Engenharia de Software</h1>
-                <p className="font-normal text-lg md:text-xl m-0">
+        <section className="flex flex-col md:flex-row flex-1 justify-around items-center text-white w-full py-20 px-4 md:px-12 box-border">
+            <div className="flex flex-col w-full md:w-1/2 p-0 text-center md:text-left">
+                <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Quem sou eu?</h1>
+                <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Estudante de Engenharia de Software</h1>
+                <p className="font-normal text-lg md:text-xl m-0 md:m-1 mt-4 md:mt-6">
                     Sou bacharelando de Engenharia de Software (2/8) na FIAP, tenho 19 anos e estou buscando uma oportunidade de estágio como Desenvolvedor.
                 </p>
             </div>
-            <div className='container-photo'>
-                <p></p>
-                <img className='photo' src='../public/luiz-photo.jpg'></img>
+            <div className="w-full md:w-1/4 mt-8 md:mt-0 flex justify-center">
+                <img className="rounded-full w-full max-w-sm h-auto" src='../public/luiz-photo.jpg' alt="Foto de Luiz Fernando Balbino" />
             </div>
-        </nav>
+        </section>
     );
 }
 
