@@ -5,17 +5,20 @@ import Home from '../components/Home';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
+import ProjectDetail from '../components/ProjectDetail';
 import '../index.css';
 
 function App() {
   return (
     <>
       <NavBar />
-      <div className="px-20 pt-6">
+      <div className="px-4 pt-2">
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
+          {/* Rota dinâmica */}
+          <Route path='/projects/:projectName' element={<ProjectDetail />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>
