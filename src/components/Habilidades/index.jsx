@@ -32,7 +32,7 @@ const Habilidades = () => {
     return (
         <>
             {/* HABILIDADES */}
-            <section className="flex flex-col items-center text-white w-full py-20 px-4 md:px-12 box-border">
+            <section className="flex flex-col items-center text-white w-full md:px-12 box-border">
                 <div className="flex flex-col items-center w-full p-0 gap-6">
                     <h1 className="text-3xl md:text-4xl font-bold m-0">Habilidades</h1>
                     <div className="flex flex-col items-center gap-4 w-full">
@@ -52,7 +52,7 @@ const Habilidades = () => {
                                 ))}
                             </ul>
                         </div>
-                        
+
                         {/* Front-End */}
                         <div className="bg-black rounded-xl p-4 md:p-6 w-full max-w-4xl">
                             <h2 className="mt-0 mb-3 text-2xl">Front-End</h2>
