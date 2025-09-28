@@ -34,6 +34,7 @@ const Contact = () => {
 
                 {/* Formulário */}
                 <form className="bg-neutral-900 p-6 rounded-xl w-full max-w-2xl flex flex-col gap-4">
+                    <h1 className="text-2xl md:text-4xl font-bold m-0 md:m-1">Mande um e-mail:</h1>
                     <div className="flex flex-col md:flex-row gap-4 w-full">
                         <input type="text" placeholder="Nome" className="p-3 rounded-md bg-neutral-800 border border-neutral-700 w-full text-white" />
                         <input type="email" placeholder="Email" className="p-3 rounded-md bg-neutral-800 border border-neutral-700 w-full text-white" />
