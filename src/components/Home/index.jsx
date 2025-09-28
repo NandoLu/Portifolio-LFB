@@ -1,10 +1,9 @@
-import Habilidades from "../Habilidades";
-
 const Home = () => {
     return (
         <>
+
             {/* SAUDAÇÕES */}
-            <section className="flex flex-col md:flex-row flex-1 justify-around items-center text-white w-full py-20 px-4 md:px-12 box-border">
+            <section className="flex flex-col md:flex-row flex-1 justify-around items-center text-white w-full py-20 md:px-12 box-border">
                 <div className="flex flex-col w-full md:w-1/2 p-0 text-center md:text-left">
                     <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Olá!</h1>
                     <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Me chamo</h1>
@@ -20,13 +19,9 @@ const Home = () => {
                 <div className="flex flex-col items-center md:items-start w-full md:w-1/2 p-0 gap-8 text-center md:text-left">
                     <h1 className="text-3xl md:text-4xl font-bold m-0">Um pouco mais sobre mim</h1>
                     <p className="font-normal text-lg md:text-xl m-0">
-                        Sou bacharelando de Engenharia de Software (2/8) na FIAP, tenho 19 anos e estou buscando uma oportunidade de estágio como Desenvolvedor.
-                    </p>
-                    <p className="font-normal text-lg md:text-xl m-0">
-                        Formado em Técnico em Informática em 2024 no Instituto Federal do Sul de Minas.
+                        Sou bacharelando de Engenharia de Software (2/8) na FIAP, tenho 19 anos, formado em TI em 2024 e estou buscando uma oportunidade de estágio como Desenvolvedor.
                     </p>
                 </div>
-               
             </section>
 
             {/* CONTRIBUICOES */}
@@ -43,14 +38,6 @@ const Home = () => {
                     <p className="text-center mt-5">
                         Veja meu perfil completo no <a href="https://github.com/NandoLu" target="_blank" rel="noopener noreferrer" className="text-[#3e85ff] no-underline text-base transition-colors duration-300 hover:text-white">GitHub</a>.
                     </p>
-                </div>
-            </section>
-
-
-            {/* HABILIDADES */}
-            <section className="flex flex-col items-center text-white w-full px-4 md:px-12 box-border">
-                <div className="flex flex-col items-center w-full p-0 gap-6">
-                    <Habilidades/>
                 </div>
             </section>
         </>
