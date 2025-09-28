@@ -6,11 +6,13 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import ProjectDetail from '../components/ProjectDetail';
+import DynamicBackground from '../components/DynamicBackground';
 import '../index.css';
 
 function App() {
   return (
     <>
+      <DynamicBackground />
       <NavBar />
       <div className="px-4 pt-2">
         <Routes>
