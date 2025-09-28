@@ -10,7 +10,7 @@ const Home = () => {
                     <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Luiz Fernando Balbino</h1>
                 </div>
                 <div className="w-1/2 md:w-1/4 mt-8 md:mt-0 flex justify-center">
-                    <img className="rounded-full w-full max-w-sm h-auto" src='../public/luiz-photo.jpg' alt="Foto de Luiz Fernando Balbino" />
+                    <img className="rounded-full w-full max-w-sm h-auto" src='/luiz-photo.jpg' alt="Foto de Luiz Fernando Balbino" />
                 </div>
             </section>
 
