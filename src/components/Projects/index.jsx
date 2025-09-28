@@ -3,7 +3,7 @@ import ListaProjetos from '../ListaProjetos'
 const Projects = () => {
     return (
         <>
-            <section className="flex flex-col flex-1 justify-around items-center text-white w-full py-20 px-4 md:px-12 box-border">
+            <section className="flex flex-col flex-1 justify-around items-center text-white w-full py-20 md:px-12 box-border">
                 {/* Contêiner do Título e Subtítulo */}
                 <div className="flex flex-col w-full p-0 text-center">
                     <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Projetos</h1>
