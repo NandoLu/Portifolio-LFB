@@ -13,7 +13,7 @@ const Habilidades = () => {
         { name: 'Node JS', icon: nodejsIcon },
         { name: 'JavaScript', icon: javascriptIcon },
         { name: 'TypeScript', icon: typescriptIcon },
-        { name: 'Python', icon: pythonIcon },
+        { name: 'Django', icon: pythonIcon },
     ];
 
     const frontendSkills = [

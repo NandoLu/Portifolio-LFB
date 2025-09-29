@@ -1,6 +1,9 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import educochain from '../../assets/project-img/educochain.png';
 import safewater from '../../assets/project-img/safewater.png';
+import sf1 from '../../assets/project-img/sf-1.png';
+import sf2 from '../../assets/project-img/sf-2.png';
+import sf3 from '../../assets/project-img/sf-3.png';
 import galeriavirtual from '../../assets/project-img/galeriavirtual.png';
 
 export const projectsData = {
@@ -11,7 +14,7 @@ export const projectsData = {
         project: 'DApp desenvolvido para o TOKENNATION Hackathon, com foco em trazer transparência e auditabilidade à gestão de verbas públicas para a educação, garantindo que o dinheiro público chegasse ao seu destino correto e que a sociedade pudesse acompanhar cada etapa do processo.',
         tecnologies: ['React Native', 'Node.js', 'TypeScript', 'Git', 'Smart Contracts', 'BNB Chain'],
         description: 'Fui responsável pelo desenvolvimento do protótipo do dApp. Isso incluiu a arquitetura técnica (Backend) baseada em Smart Contracts, a integração Full-Stack (conectando o frontend com os Contratos na BNB Chain), e a documentação do código.',
-        images: [educochain, educochain, educochain]
+        images: []
     },
     'safewater': {
         name: 'SafeWater',
@@ -20,7 +23,7 @@ export const projectsData = {
         project: 'Uma plataforma para enfrentar os desafios de inundações em São Paulo, visando proteger vidas e reduzir perdas materiais para a população.',
         tecnologies: ['HTML', 'CSS', 'JavaScript', 'Python (backend)', 'Git', 'Wokwi', 'Twilio'],
         description: 'Minhas contribuições incluíram o desenvolvimento do backend em Python, o frontend e um sensor de nível de água Arduino em tempo real. Também fui responsável pela arquitetura do frontend e pela implementação da API Twilio para comunicação dinâmica de alertas por SMS.',
-        images: [safewater, safewater, safewater]
+        images: [sf1,sf2,sf3]
     },
     'galeriavirtual': {
         name: 'Galeria Virtual',
@@ -29,7 +32,7 @@ export const projectsData = {
         project: 'Galeria Virtual desenvolvida para o projeto de extensão do IFSULDEMINAS “Poesia em Tirinhas”, como trabalho de conclusão de curso.',
         tecnologies: ['Django', 'Python', 'HTML', 'BootStrap', 'CSS', 'Git'],
         description: 'Liderei o ciclo completo de desenvolvimento, desde a idealização e documentação até o desenvolvimento das funcionalidades interativas, responsividade, banco de dados, login e cadastros de usuários.',
-        images: [galeriavirtual, galeriavirtual, galeriavirtual]
+        images: []
     }
 };
 
