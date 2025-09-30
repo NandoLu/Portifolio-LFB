@@ -4,6 +4,9 @@ import safewater from '../../assets/project-img/safewater.png';
 import sf1 from '../../assets/project-img/sf-1.png';
 import sf2 from '../../assets/project-img/sf-2.png';
 import sf3 from '../../assets/project-img/sf-3.png';
+import edu1 from '../../assets/project-img/edu-1.jpg';
+import edu2 from '../../assets/project-img/edu-2.jpg';
+import edu3 from '../../assets/project-img/edu-3.jpg';
 import galeriavirtual from '../../assets/project-img/galeriavirtual.png';
 
 export const projectsData = {
@@ -14,7 +17,7 @@ export const projectsData = {
         project: 'DApp desenvolvido para o TOKENNATION Hackathon, com foco em trazer transparência e auditabilidade à gestão de verbas públicas para a educação, garantindo que o dinheiro público chegasse ao seu destino correto e que a sociedade pudesse acompanhar cada etapa do processo.',
         tecnologies: ['React Native', 'Node.js', 'TypeScript', 'Git', 'Smart Contracts', 'BNB Chain'],
         description: 'Fui responsável pelo desenvolvimento do protótipo do dApp. Isso incluiu a arquitetura técnica (Backend) baseada em Smart Contracts, a integração Full-Stack (conectando o frontend com os Contratos na BNB Chain), e a documentação do código.',
-        images: []
+        images: [edu1, edu2, edu3]
     },
     'safewater': {
         name: 'SafeWater',

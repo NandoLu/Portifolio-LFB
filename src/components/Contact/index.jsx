@@ -28,7 +28,7 @@ const Contact = () => {
                 </div>
 
                 {/* Botão de Download */}
-                <a href="/CV-LuizFernandoBalbino.pdf" download className="bg-[#0b3d8a] text-white font-semibold py-3 px-6 rounded-2xl transition-transform duration-300 hover:scale-105 mt-10 mb-15">
+                <a href="/LuizFB-09.pdf" download className="bg-[#0b3d8a] text-white font-semibold py-3 px-6 rounded-2xl transition-transform duration-300 hover:scale-105 mt-10 mb-15">
                     Baixar currículo
                 </a>
 
