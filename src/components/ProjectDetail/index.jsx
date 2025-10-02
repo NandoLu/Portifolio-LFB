@@ -26,7 +26,7 @@ export const projectsData = {
         project: 'Uma plataforma para enfrentar os desafios de inundações em São Paulo, visando proteger vidas e reduzir perdas materiais para a população.',
         tecnologies: ['HTML', 'CSS', 'JavaScript', 'Python (backend)', 'Git', 'Wokwi', 'Twilio'],
         description: 'Minhas contribuições incluíram o desenvolvimento do backend em Python, o frontend e um sensor de nível de água Arduino em tempo real. Também fui responsável pela arquitetura do frontend e pela implementação da API Twilio para comunicação dinâmica de alertas por SMS.',
-        images: [sf1,sf2,sf3]
+        images: [sf1, sf2, sf3]
     },
     'galeriavirtual': {
         name: 'Galeria Virtual',
@@ -109,7 +109,7 @@ const ProjectDetail = () => {
                                 <img
                                     src={image}
                                     alt={`${project.name} - Imagem ${index + 1}`}
-                                    className="w-full h-64 object-cover"
+                                    className="w-full h-auto"
                                 />
                             </div>
                         ))}
