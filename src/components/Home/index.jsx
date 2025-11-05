@@ -7,7 +7,10 @@ const Home = () => {
                 <div className="flex flex-col w-full md:w-1/2 p-0 text-center md:text-left">
                     <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Olá!</h1>
                     <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Me chamo</h1>
-                    <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Luiz Fernando Balbino</h1>
+                    {/* DESTAQUE DO NOME */}
+                    <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1 text-blue-600">
+                        Luiz Fernando Balbino
+                    </h1>
                 </div>
                 <div className="w-1/2 md:w-1/4 mt-8 md:mt-0 flex justify-center">
                     <img className="rounded-full w-full max-w-sm h-auto" src='/luiz-photo.jpg' alt="Foto de Luiz Fernando Balbino" />
@@ -19,7 +22,7 @@ const Home = () => {
                 <div className="flex flex-col items-center md:items-start w-full md:w-1/2 p-0 gap-8 text-center md:text-left">
                     <h1 className="text-3xl md:text-4xl font-bold m-0">Um pouco mais sobre mim</h1>
                     <p className="font-normal text-lg md:text-xl m-0">
-                        Sou bacharelando de Engenharia de Software (2/8) na FIAP, tenho 19 anos, formado em TI em 2024 e estou buscando uma oportunidade de estágio como Desenvolvedor.
+                        Sou bacharelando de <span className="text-blue-600">Engenharia de Software (2/8) na FIAP</span>, tenho 19 anos, formado em <span className="text-blue-600">TI em 2024</span> e estou buscando uma oportunidade de estágio como <span className="text-blue-600">Desenvolvedor</span>.
                     </p>
                 </div>
             </section>
@@ -36,7 +39,7 @@ const Home = () => {
                         />
                     </div>
                     <p className="text-center mt-5">
-                        Veja meu perfil completo no <a href="https://github.com/NandoLu" target="_blank" rel="noopener noreferrer" className="text-[#3e85ff] no-underline text-base transition-colors duration-300 hover:text-white">GitHub</a>.
+                        Veja meu perfil completo no <a href="https://github.com/NandoLu" target="_blank" rel="noopener noreferrer" className="text-blue-600 no-underline text-base transition-colors duration-300 hover:text-white">GitHub</a>.
                     </p>
                 </div>
             </section>

@@ -7,7 +7,13 @@ const Projects = () => {
                 {/* Contêiner do Título e Subtítulo */}
                 <div className="flex flex-col w-full p-0 text-center">
                     <h1 className="text-3xl md:text-5xl font-bold m-0 md:m-1">Projetos</h1>
-                    <p className="text-xl md:text-2xl text-white mt-2">Aqui contém projetos acadêmicos, profissionais e pessoais! 😊</p>
+                    {/* DESTAQUE DO SUBTÍTULO */}
+                    <p className="text-xl md:text-2xl text-white mt-2">
+                        Aqui contém projetos 
+                        <span className="text-blue-600"> acadêmicos</span>, 
+                        <span className="text-blue-600"> profissionais</span> e 
+                        <span className="text-blue-600"> pessoais</span>! 😊
+                    </p>
                 </div>
                 
                 {/* PROJETOS */}
